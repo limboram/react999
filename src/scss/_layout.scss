@@ -202,10 +202,8 @@
 }
 
 //reference
-#referCont {}
-.referCont {
-
-    h2 {}
+.referCont {   
+    margin-bottom: 30vh;
 
     ul{
         border-top: 1px solid #000;
@@ -213,9 +211,48 @@
     li{
         border-bottom: 1px solid #000;
         padding: 20px;
+        transition: all 0.33s;
+
+        &:hover {
+            background: rgba(0,0,0,0.1);
+        }
 
         a {
             font-family: $font-korea-sub;
+            display: flex;
+            
+            .alpha {
+                flex: 0 0 10%;
+            }
+            .tag {
+                flex: 0 0 10%;
+            }
+            .desc {
+                flex: 0 0 70%;
+            }
+        }
+    }
+}
+.referDetail {
+    h3 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #000;
+    }
+
+    dl {
+        display: flex;
+
+        dt {
+            flex: 1 1 15%;
+            padding: 20px 0;
+            border-bottom: 1px solid #000;
+            text-align: center;
+        }
+        dd {
+            flex: 1 1 85%;
+            padding: 20px 0;
+            border-bottom: 1px solid #000;
         }
     }
 }
