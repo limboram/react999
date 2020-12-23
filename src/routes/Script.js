@@ -35,25 +35,25 @@ const siteData = [
         id: '1',
         title: '마우스 이펙트 스크립트',
         source: [
-            "http://qhfka8773.dothome.co.kr/effect/react/mouseEffect.html"
+            "https://limboram.github.io/dothome1/effect/portfolio/mouseEffect01.html"
         ]
     },{
         id: '2',
         title: '패랠랙스 이펙트 스크립트',
         source: [
-            "https://webstoryboy.github.io/dothome1/effect/port/mouseEffect02-jquery.html"
+            "https://limboram.github.io/dothome1/effect/portfolio/parallaxEffect01.html"
         ]
     },{
         id: '3',
-        title: '메뉴 이펙트 스크립트',
+        title: '퀴즈 이펙트 스크립트',
         source: [
-            "https://webstoryboy.github.io/dothome1/effect/port/mouseEffect03-jquery.html"
+            "https://limboram.github.io/dothome1/effect/portfolio/quizEffect01.html"
         ]
     },{
         id: '4',
         title: '슬라이드 이펙트 스크립트',
         source: [
-            "https://webstoryboy.github.io/dothome1/effect/port/mouseEffect04-jquery.html"
+            "https://limboram.github.io/dothome1/effect/portfolio/sliderEffect01.html"
         ]
     }
 ]

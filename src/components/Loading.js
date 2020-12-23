@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Loading(color){
+function Loading({color}){
     return (
         <div className="loading">
-                            <div class="loader">
-                            <div class="loader-inner">
+                            <div id="loader" className={color}>
+                            <div id="loader-inner" className={color}>
                                 <div class="loader-line-wrap">
                                     <div class="loader-line"></div>
                                 </div>

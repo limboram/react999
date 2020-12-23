@@ -3,66 +3,70 @@ import Header from '../components/Header';
 import Title from '../components/Title';
 import Footer from '../components/Footer';
 
-function ScriptInfo({title, source}){
+function AniInfo({title, source}){
     return (
-        <div className="script">
-            <div className="script-left">
+        <div className="aniCont">
+            <div className="ani">
+                <iframe title={title} src={source} frameborder="0" scrolling="no"></iframe>
                 <h3>{title}</h3>
-            </div>
-            <div className="script-right">
-                <div className="view">
-                    <iframe title={title} src={source}></iframe>
-                </div>
-            </div>
+            </div> 
         </div>
     )
 }
-
-const siteData = [
+const aniData = [
     {
         id: '1',
-        title: 'Tail Animation',
+        title: 'CSS Animation',
         source: [
             "https://limboram.github.io/dothome1/effect/portfolio/animation01.html"
         ]
     },{
         id: '2',
-        title: 'Text animation',
+        title: 'CSS Animation',
         source: [
-            "https://limboram.github.io/dothome1/effect/portfolio/animation02.html"
+            "https://limboram.github.io/dothome1/effect/portfolio/animation06.html"
         ]
     },{
         id: '3',
-        title: 'Loading Animation',
+        title: 'CSS Animation',
+        source: [
+            "https://limboram.github.io/dothome1/effect/portfolio/animation05.html"
+        ]
+    },{
+        id: '4',
+        title: 'CSS Animation',
         source: [
             "https://limboram.github.io/dothome1/effect/portfolio/animation04.html"
         ]
     },{
-        id: '4',
-        title: 'Heart Animation',
+        id: '5',
+        title: 'GSAP Animation',
         source: [
-            "https://limboram.github.io/dothome1/effect/portfolio/animation05.html"
+            "https://limboram.github.io/dothome1/effect/portfolio/animation03.html"
+        ]
+    },{
+        id: '6',
+        title: 'SVG Animation',
+        source: [
+            "https://limboram.github.io/dothome1/effect/portfolio/animation02.html"
         ]
     }
 ]
 
-function Script(){
+function Ani(){
     return (
         <div id="wrap">
             <Header color="white" />
             <main id="main">
-                <section id="scriptCont">
-                    <div className="container">
+                <section id="aniCont">
+                    <div class="container">
                         <div className="titleWrap">
-                            <Title text={['Animation','reference','Animation Reference']} />
+                            <Title text={['animation','book','animation book']}/>
                         </div>
-                        <div className="scriptCont">
-                            {siteData.map((site) => {
-                                console.log(site.source[0])
-                                return <ScriptInfo 
-                                    key={site.id}
-                                    title={site.title}
-                                    source={site.source[0]}
+                        <div className="aniCont">
+                            {aniData.map((txt)=>{
+                                return <AniInfo 
+                                    key={txt.id} title={txt.title} source={txt.source[0]}
                                 />
                             })}
                         </div>
@@ -72,6 +76,6 @@ function Script(){
             <Footer />
         </div>
     )
-}
+};
 
-export default Script;
+export default Ani;

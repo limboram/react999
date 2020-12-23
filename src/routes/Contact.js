@@ -10,8 +10,7 @@ function Contact(){
                         <div className="contactCont">
                             <div>THANK YOU.</div>
                             <div>PLEASE </div>
-                            <div>CONTACT ME.</div>
-                            <div className="text">e-mail qhfka8773@naver.com</div>
+                            <div className="white">CONTACT ME.</div>
                         </div>
                 </section>
             </main>
